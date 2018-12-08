@@ -1,0 +1,36 @@
+{
+  "name": "playingcards",
+  "version": "1.0.0",
+  "description": "This is coding challenge is a playing cards will be given out to n(number) of people",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "node_modules/.bin/jest --runInBand",
+    "start": "nodemon --exec babel-node ./index.js",
+    "lint": "node_modules/.bin/eslint lib/**/*.js index.js",
+    "build:start": "webpack && node ./dist/index.js input.txt"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "lib/**/*.js"
+    ],
+    "verbose": true
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.9.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.7",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
